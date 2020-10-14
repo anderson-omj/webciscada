@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ciscada </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            form {
+                font-size: 1.5em;
+            }
+            .outer, .inner {
+  width: 100%;
+}
+.outer {
+  position: relative;
+  overflow: hidden;
+}
+.inner {
+  position: absolute;
+}
+          </style>
+    </head>
+    <body>
+
+    <h1>Você ficou sabendo?</h1>
+    <form id="joke-form">
+            <input id="answer" type="text" size="10">
+        <button type="submit">Enviar</button>
+    </form>
+    <p><div class="outer">
+        <div class="inner">
+                KKKKKKKKKKKKKKKKKKKKKKKK
+        </div>
+      </div></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $("#joke-form").on("submit", function(event){
+            event.preventDefault();
+            var $answer = $(this).find("#answer");
+            var answer = $answer.val();
+            if (answer === "sim" || answer === "Sim"){
+              $("<p>")
+                .text("fodase diz que nao")
+                .appendTo("body");
+            }
+            else {
+              $("<p>")
+                .text("seu cu ta fedendo")
+                .css("color", "red")
+                .appendTo("body");
+            }
+            $("<h3>")
+              .text("KKKKKKKKKKKKKKKKKKKKKKKK")
+              .css("position", "absolute")
+              .css("top", "100px")
+              .css("left",  "100px")
+              .appendTo("body");
+              $("<h3>")
+              .text("KKKKKKKKKKKKKKKKKKKKKKKK")
+              .css("position", "absolute")
+              .css("bottom", "100px")
+              .css("right",  "100px")
+              .appendTo("body");
+              $("<h3>")
+              .text("KKKKKKKKKKKKKKKKKKKKKKKK")
+              .css("position", "absolute")
+              .css("bottom", "130px")
+              .css("left",  "190px")
+              .appendTo("body");
+              $("<img>")
+              .attr("src", "https://i.imgur.com/bfb9Wlv.jpg")
+              .css("position", "absolute")
+              .css("top", "170px")
+              .css("left",  "290px")
+              .css("width", "500px")
+              .css("z-index", "2")
+              .appendTo("body")
+              $("<img>")
+              .attr("src", "https://i.imgur.com/xVOr069.png")
+              .css("position", "absolute")
+              .css("top", "390px")
+              .css("left",  "690px")
+              .css("width", "500px")
+              .css("z-index", "1")
+              .appendTo("body")
+              $("<img>")
+              .attr("src", "https://i.imgur.com/QwLB7jp.png")
+              .css("position", "absolute")
+              .css("top", "690px")
+              .css("left",  "390px")
+              .css("width", "500px")
+              .css("z-index", "1")
+              .appendTo("body")
+              $("<img>")
+              .attr("src", "https://i.imgur.com/QAlprmK.png")
+              .css("position", "absolute")
+              .css("top", "1290px")
+              .css("left",  "90px")
+              .css("width", "500px")
+              .css("z-index", "1")
+              .appendTo("body")
+          });
+
+    </script>
+    </body>
+</html>
